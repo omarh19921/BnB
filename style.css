@@ -92,8 +92,7 @@ header nav ul li a:hover {
 
 /* -------  Search Form ------- */
 form {
-  display: flex;
-  flex-direction: row;
+ 
   border: 2px solid #ff385c;
   padding: 10px;
 }
@@ -119,7 +118,6 @@ form button {
 }
 
 .form-separator{
-  display: flex;
   justify-content: space-between;
 }
 /* -------  Footer ------- */
@@ -140,6 +138,12 @@ footer p {
     font-size: 55px;
   }
 }
+
+@media all and (max-width: 480px){  
+  form {
+      display: inline!important;  
+  }  
+  }
 
 @media all and (min-width: 480px){
   form{
