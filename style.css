@@ -155,12 +155,11 @@ footer p {
   header {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+  
   }
   .logo {
-    margin: 14px 0 14px 20px;
-    padding-top:0;
-    font-size: 42px;
+    margin-bottom: 20px;
+    font-size: 48px;
   }
   header nav ul {
     align-items: center;
@@ -189,13 +188,25 @@ footer p {
     width: 100%;
   }
 
-  
-  form input {
-    width: 110px;
+  form {
+    display:flex;
+    justify-content: space-between;
   }
 
-  form select {
-    max-width: 145px;
+  form div {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  form label {
+    align-self:flex-start;
+  }
+  
+  form input, form select, form button  {
+    width: 80%;
+    margin-bottom: 5px;
+  
   }
 
   .group {
@@ -207,6 +218,7 @@ footer p {
   }
 
   .find-rental {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
